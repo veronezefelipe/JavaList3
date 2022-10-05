@@ -1,5 +1,5 @@
 package ex02;
 
-public class Principal {
+public class TesteQuadrado {
 
 }
