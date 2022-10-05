@@ -1,6 +1,6 @@
 package ex01;
 
-public class Principal {
+public class TesteTempo {
 
     public static void main(String[] args) {
         Tempo temp1 = new Tempo(2, 54, 6);
