@@ -2,36 +2,36 @@ package ex01;
 
 public class Tempo {
 
-	private int hora;
+	private int hr;
 	private int minuto;
 	private int segundo;
 	
 	public Tempo() {
 		
-		hora = 0; minuto = 0; segundo = 0;
+		hr = 0; minuto = 0; segundo = 0;
 	}
 	
 	public Tempo(int h) {
 		if((h>0)&&(h<=24)) {
-			this.hora = h;
+			this.hr = h;
 		
-		}else hora = 0;
+		}else hr = 0;
 	}
 	
 	public Tempo(int h, int m) {
 		if((h>0)&&(h<=24)) {
-			this.hora = h;
+			this.hr = h;
 		
-		}else hora = 0;
+		}else hr = 0;
 		if((m > 0)&&(m<=59)) {
 			this.minuto = m;
 		}else minuto = 0;
 	}
 	public Tempo(int h, int m, int s) {
 		if((h>0)&&(h<=24)) {
-			this.hora = h;
+			this.hr = h;
 		
-		}else hora = 0;
+		}else hr = 0;
 		if((m > 0)&&(m<=59)) {
 			this.minuto = m;
 		}else minuto = 0;
@@ -41,9 +41,9 @@ public class Tempo {
 	}
 	public String toString() {
         String auxiliar = "";
-        if (hora < 9){
-        	auxiliar += "0" + hora + ":";
-        }else auxiliar += hora + ":";
+        if (hr < 9){
+        	auxiliar += "0" + hr + ":";
+        }else auxiliar += hr + ":";
         if(minuto < 9){
         	auxiliar += "0"+minuto+":";
         }else auxiliar += minuto+":";
@@ -53,12 +53,12 @@ public class Tempo {
 
         return auxiliar;
     }
-	public boolean setHora(int hora) {
-        if((hora>=0)&&(hora<=24)){
-            this.hora = hora;
+	public boolean setHr(int hr) {
+        if((hr>=0)&&(hr<=24)){
+            this.hr = hr;
             return true;
         }else{
-            this.hora = 0;
+            this.hr = 0;
             return false;
         }
     }
@@ -85,7 +85,7 @@ public class Tempo {
 	}
 	public long tempoEmSegundos(){
         long segundos = segundo;
-        long aux = hora * 60;
+        long aux = hr * 60;
         aux = aux + minuto;
         segundos = segundos + (aux * 60);
         return segundos;
