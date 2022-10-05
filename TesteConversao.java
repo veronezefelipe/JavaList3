@@ -1,6 +1,6 @@
 package ex03;
 
-public class Principal {
+public class TesteConversao {
 
 	public static void main(String[] args) {
 		ConversaoDeUnidadesDeVolume c1 = new ConversaoDeUnidadesDeVolume();
