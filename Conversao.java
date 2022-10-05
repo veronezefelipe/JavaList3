@@ -2,7 +2,7 @@ package ex03;
 
 import java.text.DecimalFormat;
 
-public class ConversaoDeUnidadesDeVolume {
+public class Conversao {
 	
 	private int quantidade = 0;
 	
